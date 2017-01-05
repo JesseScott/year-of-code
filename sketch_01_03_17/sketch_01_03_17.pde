@@ -23,6 +23,6 @@ void setup()
     }
  }
   
-  //save("current.jpg");
+  save("01_03_17.jpg");
   
 }
