@@ -29,10 +29,6 @@ class Cell
 
   void draw()
   {
-
-    float bl = x + 10 ;
-    float br = x + 90;
-    float bottom = y + 95;
     
     int iterations = 2;
     for(int i = 0; i < iterations; i++)
@@ -40,7 +36,7 @@ class Cell
       float offset = (i+1) * seed;
       
       strokeWeight(offset);
-      stroke(0, offset);
+      stroke(offset, offset);
       strokeCap(ROUND);
       
       line(centerX, centerY, centerX + (w * i), centerY - (h * i) );
